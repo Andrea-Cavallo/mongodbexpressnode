@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/bootstrap.css" />
+    <style>iframe { display:block; } </style>
+    <link rel="stylesheet" href="styles/prova.scss"/>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/esempio.css" />
+    <title>NODEJS</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+      </style>
+  </head>
+
+  <body>
+     <!-- hEADER -->
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">JQUERY AJAX  </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >Home <span class="sr-only">(current)</span></a   >
+            </li>  
+          </ul>
+            <input
+              class="form-control mr-sm-2"
+              type="text"
+              placeholder="Search"
+              aria-label="Search"
+              id = "cercaPerNome"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" id="cercaPerNomeBut" >SEARCH</button> 
+        </div>
+      </nav>
+    </header>
+    <nav class="navbar">
+    </nav>
+       <!-- FINE hEADER -->
+            <!-- JUMBOTRON -->
+    <div class="container-fluid">
+    <div class="jumbotron jumbotron-fluid">
+<div class="display">
+	<a class="HOVER">
+		<span> </span>
+		<text></text>   
+	</a>
+	<a class="HOVER FLASH">
+		<span></span>
+		<text>NO!!!!</text>
+	</a>
+	<a class="HOVER">
+		<span></span>
+		<text></text>
+	</a>
+	<a class="HOVER">
+		<span></span>
+		<text></text>
+	</a>
+</div>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <div class="artist-card">
+    <h2 class="artist-card__title"><div id="draggable">JQUERY &nbsp;&nbsp;      ROCKS!"</div></h2>
+    </div>
+  </div>
+</div>
+<div class="display">
+	<a class="HOVER">
+		<span> </span>
+		<text></text>
+	</a>
+	<a class="HOVER">
+		<span></span>
+		<text></text>
+	</a>
+	<a class="HOVER">
+		<span></span>
+		<text></text>
+	</a>
+	<a class="HOVER FLASH">
+		<span></span>
+		<text>NO!!!</text>
+	</a>
+</div>
+</div>
+</div>
+</div>
+            <!--FINE JUMBOTRON -->
+      <div class="container-fluid">  
+        </div></div>
+      <!-- Modal INVIA FORM -->
+            <div
+              class="modal fade"
+              id="exampleModalLong"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLongTitle"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">
+                   
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <section class="get-in-touch">
+                      <h1 class="title">Add a Stud!</h1>
+                      <form class="contact-form row">
+                         <div class="form-field col-lg-6">
+                            <input id="name" class="input-text js-input" type="text" required>
+                            <label class="label" for="name">Name</label>
+                         </div>
+                         <div class="form-field col-lg-6 ">
+                            <input id="address" class="input-text js-input" type="address" required>
+                            <label class="label" for="address">Address</label>
+                         </div>
+                         <div class="form-field col-lg-6 ">
+                            <input id="city" class="input-text js-input" type="text" required>
+                            <label class="label" for="city">City</label>
+                         </div>
+                          <div class="form-field col-lg-6 ">
+                            <input id="Postcode" class="input-text js-input" type="text" required>
+                            <label class="label" for="Postcode">Postcode</label>
+                         </div>         
+                         <div class="form-field col-lg-12">
+                            <input class="submit-btn" type="submit" id ="inviaForm">        
+                                            </button>
+                         </div>
+                      </form>
+                    </section>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>   
+            </div>
+          </div>
+        </div>
+      </div>
+            <!-- fine modale invia form -->
+                  <!-- TABELLA -->
+      <div class="container-fluid">
+      <table class="table table-hover table-dark" class="table table-hover">
+        <thead>
+          <thead>
+            <tr>
+              <td scope="col"><h3><strong >✓</strong></h3></td>
+              <td scope="col"><h3><strong >NAME</strong></h3></td>
+              <td scope="col"><h3><strong >ADDRESS</strong></h3></td>
+              <td scope="col"><h3><strong >CITY</strong></h3></td>
+              <td scope="col"><h3><strong >POSTCODE</strong></h3></td>
+            </tr>
+          </thead>
+        </thead>
+        <tbody id="bodyTabella"></tbody>
+      </table>
+            <!-- fINE TABELLA -->
+            <!-- BOTTONI IN GRID -->
+      <div class="row">
+        <div class="col">  <a href="#" class="top"
+          ><img src="assets/img_158933.png" width="50" height="50"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span
+        ></a></div>
+        <div class="col">         <button
+          type="button"
+          id="update-row"
+          class="btn btn-dark"
+        >UPDATE
+        </button>
+        </div>
+        <div class="col">  <button
+          type="button"
+          id="delete-row"
+          class="btn btn-dark"
+        >
+          Delete 
+        </button></div>
+        <div class="col">
+          <button
+          type="button"
+          class="btn btn-dark"
+          data-toggle="modal"
+          data-target="#exampleModalLong"
+        >INSERT   </button></div>
+      </div>
+               <!-- FINE BOTTONI IN GRID -->
+                           <!-- FOOTER -->
+    <div class="container-fluid">
+      <iframe src="footer.html" frameborder="0" cellspacing="0" scrolling="yes" seamless='seamless' style="width:100%; height:100px;"></iframe>
+     </div>
+     <div class="container-fluid">
+      <iframe src="pong.html" frameborder="0" cellspacing="0" scrolling="yes" seamless='seamless' style="width:100%; height:650px;"></iframe>
+     </div>
+            <!-- FINE FOOTER -->
+             <!-- MODALE DI UPDATE -->
+      <div class="modal" tabindex="-1" role="dialog" id="modaleModifica">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">  
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <section class="get-in-touch">
+              <h1 class="title">UPDATE YOUR STUD!</h1>
+            <div id="studentiForm">
+              <form class="contact-form row">
+                 <input type="hidden" id="idMod" >
+                 <div class="form-field col-lg-6">
+                    <input id="nameMod" class="input-text js-input" type="text" >
+                    <label class="label" for="name">Name</label>
+                 </div>
+                 <div class="form-field col-lg-6 ">
+                    <input id="addressMod" class="input-text js-input" type="address" >
+                    <label class="label" for="address">Address</label>
+                 </div>
+                 <div class="form-field col-lg-6 ">
+                    <input id="cityMod" class="input-text js-input" type="text" >
+                    <label class="label" for="cityMod">City</label>
+                 </div>
+                  <div class="form-field col-lg-6 ">
+                    <input id="PostcodeMod" class="input-text js-input" type="text" >
+                    <label class="label" for="PostcodeMod">Postcode</label>
+                 </div>      
+                 <div class="form-field col-lg-12">
+                    <input class="submit-btn" type="submit" id="updatemodale">
+                 </div>
+             </form>
+             </div>
+          </div>
+        </div>
+      </div>
+                  <!-- FINE MODALE DI UPDATE -->
+                              <!-- MODALE DI RICERCA -->
+      <div class="row">
+        <div class="col-12 ">   
+      <div class="modal" tabindex="-1" role="dialog" id ="modaleCerca">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">RisultatiRicerca</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div id="risultati"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+                                    <!--  FINE MODALE DI RICERCA -->
+                              <!-- MODALE DI CONFERMA ELIMINAZIONE STUDENTE -->
+      <div class="modal" tabindex="-1" role="dialog" id ="modaleEliminato">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Studente Eliminato</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div id="Eliminato"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+                                  <!--  FINE MODALE DI CONFERMA ELIMINAZIONE -->
+                              <!-- SCRIPT -->
+      <script src="scripts/jquery.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"
+      ></script>
+      <script src="scripts/bootstrap.js"></script>
+      <script src="scripts/index.js"></script>
+      <script src="scripts/esempio.js"></script>
+                                 <!-- FINE SCRIPT -->
+  </body>
+</html>

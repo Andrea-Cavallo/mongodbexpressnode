@@ -1,0 +1,28 @@
+p{
+    border:1px solid black;
+    padding: 8px
+}
+
+
+.square {
+            
+    margin-top: 5px;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
